@@ -82,6 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // itemCount: 1,
         // itemBuilder: (context, index) {
         children: <Widget>[
+
           //#region Com_Tam
           new Card(
             child: Wrap(
@@ -104,6 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           builder: (context) => CtPage(context),
                         ),
                       );
+                    //  Tooltip(message: 'Get more details!');
                     },
                     splashColor: Colors.deepOrange,
                     child: Row(
@@ -116,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               image: AssetImage('images/com_tam.jpg'),
                               width: 150,
                               height: 150,
-                              fit: BoxFit.fill),
+                              fit: BoxFit.fill, ),
                         ),
                         Row(
                           children: <Widget>[
